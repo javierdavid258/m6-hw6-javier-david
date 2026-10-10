@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning and Pseudoclasses</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="overview">
+        <h2>Overview</h2>
+        <p>
+          In this assignment, you will use CSS positioning, pseudo-classes, and
+          pseudo-elements to create interactive features for your website. This
+          assignment is designed to help you practice more advanced styling
+          techniques and improve your ability to control layout and user
+          interaction with CSS.
+        </p>
+
+        <div class="sticky-demo" aria-label="Demo of sticky positioning and tooltip effects">
+          <div class="demo-bar">
+            <span class="demo-tag">CLOUDIA</span>
+            <span class="demo-tag muted">Home</span>
+            <span class="demo-tag muted">Contact</span>
+            <span class="demo-tag muted">:</span>
+          </div>
+
+          <div class="demo-screen">
+            <div class="demo-window" aria-hidden="true">
+              <div class="demo-hero"></div>
+              <div class="demo-card">
+                <h3>Main Heading</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="demo-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-controls">
+            <button type="button" aria-label="Play audio">
+              <span class="play-icon">▶</span>
+            </button>
+            <span class="timer">0:00 / 0:09</span>
+            <span class="controls-right" aria-hidden="true">
+              <span>⚙</span>
+              <span>↗</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-block">
+        <h2>Background</h2>
+        <p>
+          In this assignment, you will use CSS positioning, pseudo-classes, and
+          pseudo-elements to create interactive features for your website. This
+          assignment is designed to help you practice more advanced styling
+          techniques and improve your ability to control layout and user
+          interaction with CSS.
+        </p>
+      </section>
+
+      <section class="content-block">
+        <h2>Setup</h2>
+        <p>
+          Create a git repository titled <strong>m6-hw6-lastname-firstname</strong>
+          and clone the repo to your computer. Copy the contents of the
+          <span class="tooltip" tabindex="0">
+            unzipped folder
+            <span class="tooltip-text">Assignment starter files</span>
+          </span>
+          into your repository. Ensure the <strong>index.html</strong> file is in
+          the root of your repository so that it deploys to GitHub Pages properly.
+        </p>
+      </section>
+
+      <section class="content-block">
+        <h2>Instructions</h2>
+        <ol>
+          <li>
+            Use <strong>position: sticky</strong> to make the section hero element
+            stick to the top of the page when scrolling down. Refer to the gif at
+            the top of the page.
+          </li>
+          <li>
+            Create a drop cap for the first letter of the first <strong>p</strong>
+            tag in the article element.
+            <article class="drop-cap-example">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+                odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+              </p>
+            </article>
+          </li>
+          <li>
+            Finish the tooltip code in the CSS file so that hovering over or
+            focusing the red text causes the text within the inner span tag to
+            appear above or below as a word bubble. Refer to the gif at the top of
+            the page.
+            <div class="tooltip-example">
+              <span class="tooltip" tabindex="0">
+                Hover or focus me
+                <span class="tooltip-text">This is the tooltip bubble</span>
+              </span>
+            </div>
+          </li>
+          <li>
+            Deploy the finished site to GitHub Pages.
+          </li>
+        </ol>
+
+        <p class="note">
+          <strong>Note:</strong> A proper tooltip for production websites would
+          require special accessibility considerations as well as a healthy amount
+          of JavaScript; it is not feasible to make an accessible and fully featured
+          tooltip implementation with HTML and CSS alone. This assignment is meant
+          to be an exercise to practice specific CSS skills, not a test of product
+          quality, so do not fret over making your tooltips production-ready.
+        </p>
+      </section>
+
+      <section class="content-block">
+        <h2>Resources</h2>
+        <ul class="resource-list">
+          <li><a href="#">CSS Positioning and Pseudoclasses Files</a></li>
+        </ul>
+      </section>
+
+      <section class="content-block deploy">
+        <h2>Deployment</h2>
+        <p>
+          Your code must be deployed to GitHub Pages. To deploy a repository to
+          GitHub Pages you must:
+        </p>
+
+        <ol>
+          <li>Ensure your repository has an <strong>index.html</strong> file in the root directory.</li>
+          <li>Navigate to the <strong>settings</strong> section of the repository.</li>
+          <li>Click on <strong>pages</strong> in the left navigation menu.</li>
+          <li>Under <strong>source</strong> click the dropdown and select your master or main branch.</li>
+          <li>Click <strong>save</strong>.</li>
+        </ol>
+
+        <p>
+          Your site should be deployed to
+          <code>https://&lt;your github username&gt;.github.io/&lt;your repository name&gt;</code>
+          in 5–10 minutes.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
